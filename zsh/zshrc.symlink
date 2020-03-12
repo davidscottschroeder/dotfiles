@@ -9,7 +9,6 @@ antigen bundle BrandonRoehl/zsh-clean
 antigen apply
 
 fpath=($HOME/.dotfiles/zsh-clean-prompt $fpath)
-prompt codesmith
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
@@ -60,7 +59,6 @@ unset config_files
 unsetopt nomatch
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-eval "$(rbenv init -)"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/brian/.sdkman"
